@@ -7,6 +7,7 @@ import useCategories from "../hooks/useCategories";
 import useProducts from "../hooks/useProducts";
 import FeaturedProducts from "../components/FeaturedProducts";
 import BestSellers from "../components/BestSellers";
+import PromoBanner from "../components/PromoBanner";
 
 
 const Home=()=>{
@@ -22,6 +23,7 @@ const Home=()=>{
         <CategoryCircles/>
         <FeaturedProducts />
         <BestSellers />
+        <PromoBanner/>
       </section>
     </main>
     <Footer />
