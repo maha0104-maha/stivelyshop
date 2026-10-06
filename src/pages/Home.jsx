@@ -2,9 +2,13 @@ import React from "react";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroSlider from "../components/HeroSlider";
+import  CategoryCircles  from "../components/CategoryCircles";
+import useCategories from "../hooks/useCategories";
+import useProducts from "../hooks/useProducts";
 
 
 const Home=()=>{
+  const {categories,error,loading}=useCategories();
  
   return (
     <>
@@ -13,7 +17,7 @@ const Home=()=>{
     <main className="mx-auto max-w-7xl px-6 py-10">
       <section className="text-center">
         <HeroSlider />
-      
+        <CategoryCircles/>
       </section>
     </main>
     <Footer />
