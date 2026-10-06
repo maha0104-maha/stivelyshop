@@ -5,6 +5,8 @@ import HeroSlider from "../components/HeroSlider";
 import  CategoryCircles  from "../components/CategoryCircles";
 import useCategories from "../hooks/useCategories";
 import useProducts from "../hooks/useProducts";
+import FeaturedProducts from "../components/FeaturedProducts";
+import BestSellers from "../components/BestSellers";
 
 
 const Home=()=>{
@@ -18,6 +20,8 @@ const Home=()=>{
       <section className="text-center">
         <HeroSlider />
         <CategoryCircles/>
+        <FeaturedProducts />
+        <BestSellers />
       </section>
     </main>
     <Footer />

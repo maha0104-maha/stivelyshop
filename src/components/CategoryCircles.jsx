@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import useProducts from "../hooks/useProducts";
+import Headingg from './Headingg';
 
 const CategoryCircles=()=>{
     const {products,loading,error } = useProducts();
@@ -58,16 +59,8 @@ const categoryData=[
 
   return (
     <section className="mt-[-10px] max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-      <div className="mb-8 relative flex items-end justify-center min-h-[64px]">
-        <div className="text-center">
-            <p className="mb-1 text-xs font-medium uppercase tracking-[0.18em] text-gray-500">Explore</p>
-            <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">Shop by Category</h2>
-        </div>
-        <Link  to="/categories"  className="absolute right-0 bottom-0 text-sm font-medium text-gray-700 hover:text-black whitespace-nowrap">
-        View All
-        </Link>
-   </div>
-
+      
+        <Headingg headingg="Explore" subheading="shop by categories"  linkto="categories" />
         {/*4categories */}
         <div className='grid grid-cols-2 gap-6 sm:grid-cols-4 justify-items-center'>
             {categoryData.map((category)=>{
