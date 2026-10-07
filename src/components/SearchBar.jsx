@@ -1,31 +1,22 @@
-import React, { useState } from "react";
-import { FiSearch } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
-
+import React, {useState} from "react";
+import {FiSearch} from "react-icons/fi";
+import {useNavigate} from "react-router-dom";
 const SearchBar = () => {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
-
   const handleSearch = (e) => {
     e.preventDefault();
-
     const query = search.trim();
-
-    if (!query) {
-      navigate("/search");
+    if (!query){navigate("/search");
       return;
     }
-
-    navigate(`/search?search=${encodeURIComponent(query)}`);
+   navigate(`/search?search=${encodeURIComponent(query)}`);
   };
-
   return (
     <form
       onSubmit={handleSearch}
-      className="flex w-full max-w-md items-center rounded-full border border-gray-300 bg-white px-4 py-2"
-    >
+      className="flex w-full max-w-md items-center rounded-full border border-gray-300 bg-white px-4 py-2">
       <FiSearch className="h-5 w-5 shrink-0 text-gray-500" />
-
       <input
         type="text"
         value={search}

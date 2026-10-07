@@ -9,6 +9,7 @@ import Pagination from "../components/Pagination";
 import Loader from "../components/Loader";
 import ErrorState from "../components/ErrorState";
 import EmptyState from "../components/EmptyState";
+import SearchBar from "../components/SearchBar";
 
 
 const Search=()=>{
@@ -114,7 +115,10 @@ const Search=()=>{
   }
   return(
     <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mb-8">
+      <div className="mb-8 ">
+          <div className="mb-6 flex justify-center">
+            <SearchBar />
+         </div>
         <p className="mb-2 text-xs font-medium uppercase tracking-[0.18em] text-gray-500">
           Shop
         </p>
