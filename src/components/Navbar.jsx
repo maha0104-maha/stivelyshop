@@ -23,20 +23,20 @@ const NavBar=()=>{
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" className="group flex flex-col items-center gap-1">
+          <NavLink to="/search" className="group flex flex-col items-center gap-1">
             <p>SEARCH</p>
             <hr className="hidden h-[1.5px] w-1/2 border-none bg-gray-900 group-hover:block" />
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" className="group flex flex-col items-center gap-1">
+          <NavLink to="/categories" className="group flex flex-col items-center gap-1">
             <p>CATEGORIES</p>
             <hr className="hidden h-[1.5px] w-1/2 border-none bg-gray-900 group-hover:block" />
           </NavLink>
         </li>
         
         <li>
-          <NavLink to="/" className="group flex flex-col items-center gap-1">
+          <NavLink to="/about" className="group flex flex-col items-center gap-1">
             <p>ABOUT</p>
             <hr className="hidden h-[1.5px] w-1/2 border-none bg-gray-900 group-hover:block" />
           </NavLink>
@@ -69,13 +69,13 @@ const NavBar=()=>{
          <NavLink to="/" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
             HOME
           </NavLink>
-          <NavLink to="/" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
+          <NavLink to="/search" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
             SHOP
           </NavLink>
-          <NavLink to="/" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
-            SEARCH
+          <NavLink to="/categories" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
+            CATEGORIES
           </NavLink>
-          <NavLink to="/" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
+          <NavLink to="/about" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
             ABOUT
           </NavLink>
 

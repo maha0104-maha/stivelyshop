@@ -69,7 +69,7 @@ const categoryData=[
                 to={`/search?category=${category.categoryName}`}
                 className='group flex flex-col items-center focus:outline-none' >
                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border border-gray-200 bg-gray-50 hover:border-black">
-                   <img src={category.image||'http://uplash.com'} alt={category.displayName}
+                   <img src={category.image||''} alt={category.displayName}
                     className='h-full w-full object-cover transition duration-500 group-hover:scale-105' />
                      </div>
                     {/*name */}
