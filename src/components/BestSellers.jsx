@@ -3,6 +3,9 @@ import {Link} from "react-router-dom";
 import useProducts from "../hooks/useProducts";
 import Headingg from "./Headingg";
 import ProductCard from "./ProductCard";
+import Loader from "./Loader";
+import ErrorState from "./ErrorState";
+import EmptyState from "./EmptyState";
 const BestSellers=() => {
   const {products,loading,error}=useProducts();
   const fashionCategories = [
@@ -25,7 +28,25 @@ const BestSellers=() => {
 
 
    //load and error
-  
+   if (loading) {
+  return <Loader message="Loading best sellers..." />;
+}
+if (error) {
+  return (
+    <ErrorState
+      title="Unable to load best sellers"
+      message="Something went wrong while fetching the best sellers."
+    />
+  );
+}
+if (bestSellers.length === 0) {
+  return (
+    <EmptyState
+      title="No best sellers available"
+      message="There are no best-selling products available right now."
+    />
+  );
+}
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
