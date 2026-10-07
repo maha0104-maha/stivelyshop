@@ -15,7 +15,7 @@ const Home=()=>{
  
   return (
     <>
-    <NavBar />
+  
     
     <main className="mx-auto max-w-7xl px-6 py-10">
       <section className="text-center">
@@ -26,7 +26,7 @@ const Home=()=>{
         <PromoBanner/>
       </section>
     </main>
-    <Footer />
+   
     </>
   );
 };

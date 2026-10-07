@@ -6,6 +6,8 @@ import Cart from './pages/Cart'
 import Checkout from './pages/Checkout'
 import OrderConfirmation from './pages/OrderConfirmation'
 import Search from './pages/Search'
+import NavBar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -13,6 +15,7 @@ function App() {
     <>
         {/* creating the routes for the website */}
         <BrowserRouter>
+         <NavBar />
           <Routes>
               {/* home,serach,serach specific product with id,categories with name ,cart,checkout,order */}
               <Route path="/" element={<Home/>}/>
@@ -24,6 +27,7 @@ function App() {
               <Route path="/order-confirmation" element={<OrderConfirmation/>}/>
       
           </Routes>
+          <Footer />
         </BrowserRouter>
       </>
   )
