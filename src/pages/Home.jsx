@@ -7,6 +7,7 @@ import useCategories from "../hooks/useCategories";
 import useProducts from "../hooks/useProducts";
 import FeaturedProducts from "../components/FeaturedProducts";
 import BestSellers from "../components/BestSellers";
+import PromoBanner from "../components/PromoBanner";
 
 
 const Home=()=>{
@@ -14,7 +15,7 @@ const Home=()=>{
  
   return (
     <>
-    <NavBar />
+  
     
     <main className="mx-auto max-w-7xl px-6 py-10">
       <section className="text-center">
@@ -22,9 +23,10 @@ const Home=()=>{
         <CategoryCircles/>
         <FeaturedProducts />
         <BestSellers />
+        <PromoBanner/>
       </section>
     </main>
-    <Footer />
+   
     </>
   );
 };
