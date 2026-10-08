@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useProducts from '../hooks/useProducts';
-import { Heading } from 'lucide-react';
 import Headingg from './Headingg';
 import ProductCard from './ProductCard';
 import Loader from "./Loader";
