@@ -59,3 +59,4 @@ The application provides a complete shopping experience including product browsi
 - stivelyshop/src/assets/screenshots/phoneview.png
 - stivelyshop/src/assets/screenshots/tabletview.png
 
+## I have added the lighthouse html file and demo video at files,please check it
