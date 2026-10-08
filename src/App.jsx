@@ -10,6 +10,7 @@ import NavBar from './components/Navbar'
 import Footer from './components/Footer'
 import CategoriesMenu from './components/CategoriesMenu'
 import Profile from './pages/Profile'
+import NotFound from './pages/NotFound'
 function App() {
   
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/order-confirmation" element={<OrderConfirmation/>}/>
               <Route path="/categories" element={<CategoriesMenu />} />
               <Route path="/profile" element={<Profile />} />
+               <Route path="*" element={<NotFound/>} />
           </Routes>
           <Footer />
         </BrowserRouter>
