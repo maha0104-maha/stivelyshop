@@ -36,7 +36,7 @@ const NavBar=()=>{
         </li>
         
         <li>
-          <NavLink to="/about" className="group flex flex-col items-center gap-1">
+          <NavLink to="/" className="group flex flex-col items-center gap-1">
             <p>ABOUT</p>
             <hr className="hidden h-[1.5px] w-1/2 border-none bg-gray-900 group-hover:block" />
           </NavLink>
@@ -75,7 +75,7 @@ const NavBar=()=>{
           <NavLink to="/categories" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
             CATEGORIES
           </NavLink>
-          <NavLink to="/about" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
+          <NavLink to="/" onClick={()=>setVisible(false)}className="border-b border-gray-200 py-4 text-base font-medium text-gray-700">
             ABOUT
           </NavLink>
 

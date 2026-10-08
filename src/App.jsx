@@ -8,7 +8,8 @@ import OrderConfirmation from './pages/OrderConfirmation'
 import Search from './pages/Search'
 import NavBar from './components/Navbar'
 import Footer from './components/Footer'
-
+import CategoriesMenu from './components/CategoriesMenu'
+import Profile from './pages/Profile'
 function App() {
   
   return (
@@ -25,7 +26,8 @@ function App() {
               <Route path="/cart" element={<Cart/>}/>
               <Route path="/checkout" element={<Checkout/>}/>
               <Route path="/order-confirmation" element={<OrderConfirmation/>}/>
-      
+              <Route path="/categories" element={<CategoriesMenu />} />
+              <Route path="/profile" element={<Profile />} />
           </Routes>
           <Footer />
         </BrowserRouter>

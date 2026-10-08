@@ -1,11 +1,11 @@
 import React from "react";
 import { Link} from "react-router-dom";
-import EmptyState from "./EmptyState";
-const CategoriesMenu=()=>{
+import EmptyState from "../components/EmptyState";
+const Profile=()=>{
   return (
     <main className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
       <EmptyState
-        title="Categories Page Not Created Yet"
+        title="Profile Page Not Created Yet"
         message="This page is not available yet. You can browse products from the search page."
       />
       <div className="flex justify-center">
@@ -18,5 +18,4 @@ const CategoriesMenu=()=>{
     </main>
   );
 };
-
-export default CategoriesMenu;
+export default Profile;

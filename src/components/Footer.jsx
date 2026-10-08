@@ -51,7 +51,7 @@ const Footer=()=>{
                             </h3>
 
                         <div className="mt-4 flex flex-col gap-3 text-sm text-gray-500">
-                        <Link to="/about" className="transition hover:text-gray-900" >
+                        <Link to="/" className="transition hover:text-gray-900" >
                             About Us
                         </Link>
                         <Link to="/cart" className="transition hover:text-gray-900">
@@ -60,9 +60,9 @@ const Footer=()=>{
                         <Link to="/checkout"className="transition hover:text-gray-900">
                             Checkout
                         </Link>
-                        <a href="mailto:support@stivelyshop.com"className="transition hover:text-gray-900">
+                        <Link t0="/" className="transition hover:text-gray-900">
                             Contact Us
-                        </a>
+                        </Link>
                         </div>
                     </div>
 
