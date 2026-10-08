@@ -6,12 +6,14 @@ import useProducts from "../hooks/useProducts";
 import Loader from "../components/Loader";
 import ErrorState from "../components/ErrorState";
 import EmptyState from "../components/EmptyState";
+import {useCart} from "../context/CartContext";
 const ProductDetails=()=>{
   const {id} = useParams();
   const { product, loading,error} = useProduct(id);
   const { products, loading: productsLoading,} = useProducts();
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState("");
+  const {addToCart}=useCart()
   if (loading) {
     return <Loader message="Loading product details..." />;
   }
@@ -132,6 +134,12 @@ const ProductDetails=()=>{
           {/* cart */}
           <button
             type="button"
+            onClick={() =>{if (!selectedSize) {
+               alert("Please select a size");
+              return;
+             }
+           addToCart(product, quantity, selectedSize);
+            }}
             className="mt-6 flex w-full max-w-xs items-center justify-center gap-2 rounded-full bg-gray-900 px-5 py-3 text-xs font-medium text-white transition hover:bg-gray-700">
             <FiShoppingBag className="h-3.5 w-3.5" />
             Add to Cart
